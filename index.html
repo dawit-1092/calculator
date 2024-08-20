@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MY | CALCULATOR</title>
+        <link rel="shortcut icon" href="ic.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div>
+      <content class="button">
+        <h1>MY CALCULATOR <hr> </h1>
+        <header>
+    <input type="number" placeholder="Number 1" id="num1">
+    <br>
+    <input type="number" placeholder="Number 2" id="num2"><br>
+    </header>
+    <code>
+    <button class="add" id="add">+</button>
+    <button class="sub" id="sub">-</button>
+    <button class="mul" id="mul">*</button>
+    <button class="div" id="div">/</button><br></code>
+    <input type="text" placeholder="Result" id="result" readonly>
+      </content>
+      </div>
+    <script>
+      var n1 = document.getElementById("num1")
+      var n2 = document.getElementById("num2")
+      var res = document.getElementById("result")
+      document.getElementById("add").addEventListener("click", function(){
+        res.value=parseInt(n1.value)+parseInt(n2.value)
+      })
+      document.getElementById("sub").addEventListener("click", function(){
+        res.value=parseInt(n1.value)-parseInt(n2.value)
+      })
+      document.getElementById("mul").addEventListener("click", function(){
+        res.value=parseInt(n1.value)*parseInt(n2.value)
+      })
+      document.getElementById("div").addEventListener("click", function(){
+        res.value=parseInt(n1.value)/parseInt(n2.value)
+      })
+      
+    </script>
+</body>
+</html>
